@@ -24,7 +24,7 @@
   /* istanbul ignore else */
   if (typeof define === 'function' && define.amd) {
     define([
-      'js/my-app-header/my-app-header'
+      'js/my-app-header'
     ], wrap);
   } else {
     return wrap(global.jQuery);
