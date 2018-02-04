@@ -1,6 +1,13 @@
-include ./header.jade
-div
-	h1 Hello
+script(data-main="js/config" src="js/require.js")
+link(rel='stylesheet', href='less/index.css')
+script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+div(data-main-container, class="main-container")
+	div(data-header-container, class="header-container")
+		include ./header.jade
+	div
+		h1 Hello
+	div(data-footer-container, class="footer-container")
+		include ./footer.jade
 
-script(src="../js/index.js")
-include ./footer.jade
+//- script(src="js/require.js")
+//- script(src="js/index.js")

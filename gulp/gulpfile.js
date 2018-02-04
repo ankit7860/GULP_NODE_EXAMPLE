@@ -14,7 +14,7 @@ gulp.task('less', function () {
 });
 
 gulp.task('js', function () {
-    return gulp.src('../src/**/*.js') // Get source files with gulp.src
+    return gulp.src('../src/**/**/*.js') // Get source files with gulp.src
         .pipe(gulp.dest('../dist/js/')) // Outputs the file in the destination folder
 })
 
