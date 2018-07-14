@@ -1,0 +1,62 @@
+@import "../color.less";
+
+.admin-homepage {
+  padding: 50px 0px;
+  .about {
+    text-align: center;
+    .intro-text{
+      display: block;
+      width: 100%;
+    }
+    &>span {
+      word-spacing: 0px;
+      letter-spacing: 0px;
+    }
+    .about-greet-part {
+      margin: 0;
+      font-size: 76.779px;
+      color: @light_red;
+    }
+    .about-part {
+      margin-top: 0;
+      .about-first-part {
+        color: @light_red_1;
+        font-size: 53.43px;
+      }
+      .about-second-part {
+        color: @voilet;
+        font-size: 15.887px;
+      }
+      .about-third-part {
+        color: @light_blue;
+        padding-bottom: 0px;
+        font-size: 14.837px;
+      }
+      .about-fourth-part {
+        color: @light_blue;
+        padding-bottom: 0px;
+        font-size: 31.85px;
+        strong {
+          color: @blue;
+        }
+      }
+      .about-fifth-part {
+        color: @light_blue;
+        font-size: 40.589px;
+      }
+    }
+  }
+  .admin-footer {
+    position: relative;
+    .go-down {
+      height: 50px;
+      width: 50px;
+      background-color: @white;
+      position: absolute;
+      left: 50%;
+      // top: 50%;
+      -webkit-transform: translate(-50%, 235%);
+      transform: translate(-50%, 235%);
+    }
+  }
+}

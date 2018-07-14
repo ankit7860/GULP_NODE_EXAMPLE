@@ -1,13 +1,42 @@
 @import "./color.less";
-
-.main-container {
-    .header-container {
-        color: @nice-blue
+body {
+  margin: 0px;
+  .main-container {
+    height: 100%;
+    width: 100%;
+    background-color: @light_grey;
+    .content-container {
+      background-color: @gray;
+      height: 80%;
     }
-    .main-container {
-        color: @light-blue
+    .header-container {
+      color: @black;
+      height: 10%;
+      .main-header {
+        .header-link {
+          padding: 10px 10px;
+          font-size: 20px;
+          display: inline-block;
+          &.about {
+            position: absolute;
+            right: 0px;
+          }
+        }
+      }
     }
     .footer-container {
-        color: @nice-blue
+      color: @nice-blue
     }
+    .error {
+      color: @red
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .active {
+    color: @white;
+  }
 }

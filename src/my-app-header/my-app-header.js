@@ -26,30 +26,19 @@
     MyAppHeader.prototype.bindElements = function() {
       console.log(nameSpace + ': bindElements');
       var self = this;
-    };
+      self.appHeaderContainer.on('click', '.admin-profile-link', function() {
 
-    MyAppHeader.prototype.renderHeader = function() {
-      console.log(nameSpace + ': render');
-      var self = this;
-    };
-
-    MyAppHeader.prototype.bindSubscriptions = function() {
-      console.log(nameSpace + ': bindSubscriptions');
-      var self = this;
-      store.subscribeToPath('PATH', function(response) {
-        if (!$.isEmptyObject(response)) {
-          store.dispatch(actions.ACTION_CRAETOR_FUNC);
-        }
       });
-    }
+    };
 
     return new MyAppHeader();
   }; // Wrap Ends
   // Register module with AMD
   /* istanbul ignore else */
   if (typeof define === 'function' && define.amd) {
-    define([
-      'jquery'
+    define('js/my-app-header', [
+      'jquery',
+      'js/ui-admin-homepage'
     ], wrap);
   } else {
     return wrap(global.jQuery);

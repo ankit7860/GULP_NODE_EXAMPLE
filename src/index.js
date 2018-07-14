@@ -1,9 +1,8 @@
 /*jslint browser: true */
-/*global define, dust, mwfGlobals, $ */
 (function(global) {
 	'use strict';
 	console.log('index loading...');
-  var wrap = function($, appHeader, appBody) {
+  var wrap = function($, appHeader) {
     console.log('inside wrap index...');
     var defaults = {
     };
@@ -24,6 +23,7 @@
   /* istanbul ignore else */
   if (typeof define === 'function' && define.amd) {
     define([
+      'jquery',
       'js/my-app-header'
     ], wrap);
   } else {

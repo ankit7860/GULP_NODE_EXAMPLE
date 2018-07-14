@@ -21,7 +21,6 @@ gulp.task('js', function () {
 			.pipe(gulp.dest('../dist/js/')) // Outputs the file in the destination folder
 })
 
- 
 gulp.task('fragments', function() { 
   gulp.src('../src/**/*.jade')
     .pipe(jade())
